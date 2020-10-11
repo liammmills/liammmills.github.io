@@ -1,0 +1,246 @@
+// =============================================================================
+// Variables
+// =============================================================================
+
+// --------------------------------------------------------------------------
+// Colors
+// --------------------------------------------------------------------------
+
+// named colour palette
+$red-colour: #ff0000 !default;
+$orange-colour: orange !default;
+$yellow-colour: #e8980c !default;
+$green-colour: #8fb63e !default;
+$blue-colour: blue !default;
+$indigo-colour: indigo !default;
+$violet-colour: violet !default;
+$white-colour: #ffffff !default;
+$grey-colour: #f6f6f6 !default;
+$lightest-grey-colour: #f0f0f0 !default;
+$mid-grey-colour: #7f7f7f !default;
+$dark-grey-colour: #404040 !default;
+$black-colour: #101010 !default;
+
+// brand colour values
+$col1: $grey-colour;
+$col2: $lightest-grey-colour;
+$col3: $mid-grey-colour;
+$col4: $dark-grey-colour;
+
+// base colour values
+$col-base: $white-colour;
+$col-invert: $black-colour;
+$col-text: $black-colour;
+$col-neutral: $yellow-colour;
+
+//  define alert colours
+$alert-negative: $red-colour;
+$alert-positive: $green-colour;
+$alert-neutral: $yellow-colour;
+
+//  social colours
+$facebook: #3b5998 !default;
+$twitter: #00aced !default;
+$google: #dd4b39 !default;
+$youtube: #bb0000 !default;
+$linkedin: #007bb6 !default;
+$instagram: #517fa4 !default;
+$pintrest: #cb2027 !default;
+$flicker: #ff0084 !default;
+$tumbler: #32506d !default;
+$vimeo: #aad450 !default;
+$foursquar: #0072b1 !default;
+$dribbble: #ea4c89 !default;
+$ecce: #8fb63e !default;
+
+// --------------------------------------------------------------------------
+// Typography
+// --------------------------------------------------------------------------
+
+$headings: "Leckerli One", cursive !default;
+$body: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter",
+  monospace !default;
+
+$normal: 400 !default;
+$medium: 600 !default;
+$bold: 700 !default;
+
+// --------------------------------------------------------------------------
+// Uniform measurement values
+// --------------------------------------------------------------------------
+
+$space: 30px !default;
+$columns: 12 !default;
+$radius: 8px !default;
+$sectionSpacing: 25px !default;
+
+// Media query breakpoints
+// needed for flexbox-grid-sass
+// to access use map-get($map, $key) sass function
+$breakpoints: (
+  xs: 0px,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+) !default;
+
+// z-index map to keep track of layering throughout the site
+$z-layers: (
+  "goku": 9001,
+  "modal": 5000,
+  "dropdown": 4000,
+  "four": 4,
+  "three": 3,
+  "two": 2,
+  "one": 1,
+  "default": 0,
+  "minus-one": -1,
+  "minus-two": -2,
+  "minus-100": -2,
+  "bottomless-pit": -10000,
+);
+
+// =============================================================================
+// flexbox-grid-sass specific (located in node_modules)
+// https://github.com/vivid-web/flexbox-grid-sass
+// =============================================================================
+
+// Set max width (based upon above breakpoints) for .grid--container
+$max-flexbox-grid-container: map-get($breakpoints, xxl);
+
+// =============================================================================
+// Reboot settings
+// =============================================================================
+
+$base-font-size: 16px !default;
+$base-line-height: 1.4 !default; // get-line-height(16, 22.4) !default;
+$base-font-weight: $normal !default;
+$base-font-family: $body !default;
+$background: $col1 !default;
+$color: $col-text !default;
+$headings-margin-bottom: 0.9375rem !default; // px-to-rem(15px) !default;
+$content-margin-bottom: 1.25rem !default; // px-to-rem(20px) !default;
+$dt-font-weight: $bold !default;
+$link-color: $col-text !default;
+$link-decoration: none !default;
+$link-hover-color: $col-text !default;
+$link-hover-decoration: none !default;
+$table-cell-padding: 0.625rem !default; // px-to-rem(10px) !default;
+$text-muted: lighten($col-text, 20%) !default;
+
+// =============================================================================
+// Button variables
+// Located here to make buttons easier to edit
+// Uncomment to override style from here rather than edit the individual scss's
+// =============================================================================
+
+// Button variables, make sure the initial values are px
+// ------------------------------------------------------------------
+
+// $button-common--border-width: 1px;
+// $button-common--border-color: $col1;
+// $button-common--border-style: solid;
+
+// $button-common--font-family: $headings;
+// $button-common--font-weight: $normal;
+// $button-common--font-size: 16px;
+// $button-common--font-color: $col1;
+// $button-common--font-letter-spacing: 0px;
+// $button-common--font-line-height: 1.1;
+// $button-common--font-text-transform: uppercase;
+
+// $button-common--padding-top-bottom: 10px;
+// $button-common--padding-right-left: 20px;
+
+// $button-common--misc-background: transparent;
+// $button-common--misc-border-radius: $radius;
+// $button-common--misc-smaller-percent: 80;
+// $button-common--misc-larger-percent: 120;
+// $button-common--misc-icon-margin: 5px;
+// $button-common--misc-box-shadow: none;
+// $button-common--misc-transition: all 250ms ease-in-out;
+
+// $button-common--small-font-size: ($button-common--font-size * ($button-common--misc-smaller-percent / 100));
+// $button-common--small-padding-top-bottom: ($button-common--padding-top-bottom * ($button-common--misc-smaller-percent / 100));
+// $button-common--small-padding-right-left: ($button-common--padding-right-left * ($button-common--misc-smaller-percent / 100));
+// $button-common--small-letter-spacing: ($button-common--font-letter-spacing * ($button-common--misc-smaller-percent / 100));
+
+// $button-common--large-font-size: ($button-common--font-size * ($button-common--misc-larger-percent / 100));
+// $button-common--large-padding-top-bottom: ($button-common--padding-top-bottom * ($button-common--misc-larger-percent / 100));
+// $button-common--large-padding-right-left: ($button-common--padding-right-left * ($button-common--misc-larger-percent / 100));
+// $button-common--large-letter-spacing: ($button-common--font-letter-spacing * ($button-common--misc-larger-percent / 100));
+
+/*
+$button-specific: (
+	'one': (
+		'border': (
+			'color': $col1,
+			'colorHover': $col1
+		),
+		'font': (
+			'color': $col1,
+			'colorHover': $col-base
+		),
+		'background': (
+			'color': transparent,
+			'colorHover': $col1
+		),
+		'focus': (
+			'boxShadow': 0 0 0 px-to-rem(4px) $blue-colour
+		)
+	),
+	'two': (
+		'border': (
+			'color': $col2,
+			'colorHover': $col2
+		),
+		'font': (
+			'color': $col2,
+			'colorHover': $col-base
+		),
+		'background': (
+			'color': transparent,
+			'colorHover': $col2
+		),
+		'focus': (
+			'boxShadow': 0 0 0 px-to-rem(4px) $blue-colour
+		)
+	),
+	'three': (
+		'border': (
+			'color': $col3,
+			'colorHover': $col3
+		),
+		'font': (
+			'color': $col3,
+			'colorHover': $col-base
+		),
+		'background': (
+			'color': transparent,
+			'colorHover': $col3
+		),
+		'focus': (
+			'boxShadow': 0 0 0 px-to-rem(4px) $blue-colour
+		)
+	)
+);
+*/
+
+// =============================================================================
+// Utility specific variables
+// =============================================================================
+
+// colours
+/* $colour-list: (
+		'one': $col1,
+		'two': $col2,
+		'three': $col3,
+		'four': $col4,
+		'text': $col-text,
+		'negative': $alert-negative,
+		'positive': $alert-positive,
+		'neutral': $alert-neutral
+); */

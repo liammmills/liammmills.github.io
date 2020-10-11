@@ -1,0 +1,11 @@
+.b-main {
+  display: block;
+  position: relative;
+  z-index: z-index("default");
+  height: 100%;
+
+  & > * {
+    position: relative;
+    z-index: z-index("default");
+  }
+}

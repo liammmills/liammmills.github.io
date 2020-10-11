@@ -1,0 +1,15 @@
+.b-wrapper {
+  display: block;
+  position: relative;
+  z-index: z-index("default");
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: px-to-rem(15px);
+  text-align: center;
+
+  body.no-scroll & {
+    overflow: hidden;
+  }
+}

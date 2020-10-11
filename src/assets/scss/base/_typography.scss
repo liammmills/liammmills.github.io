@@ -1,0 +1,182 @@
+// --------------------------------------------------------------------------
+// typography
+// --------------------------------------------------------------------------
+
+// Adding class styles for headings so that you can use the styling for larger headings
+// in places further down the page that won't make sense semantically to use higher weighted heading tags.
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.b-heading-1,
+.b-heading-2,
+.b-heading-3,
+.b-heading-4,
+.b-heading-5,
+.b-heading-6 {
+  font-family: $headings;
+  font-weight: $normal;
+  color: $col-text;
+  line-height: 1.1;
+  text-shadow: px-to-rem(1px) px-to-rem(1px) 0 #d5d5d5,
+    px-to-rem(2px) px-to-rem(2px) 0 rgba(0, 0, 0, 0.2);
+}
+
+h1,
+.b-heading-1 {
+  font-size: px-to-rem(30px);
+
+  @include min-screen(map-get($breakpoints, md)) {
+    font-size: px-to-rem(36px);
+  }
+}
+
+h2,
+.b-heading-2,
+h3,
+.b-heading-3 {
+  font-size: px-to-rem(20px);
+
+  @include min-screen(map-get($breakpoints, md)) {
+    font-size: px-to-rem(24px);
+  }
+}
+
+h4,
+.b-heading-4 {
+  font-size: px-to-rem(17px);
+
+  @include min-screen(map-get($breakpoints, md)) {
+    font-size: px-to-rem(18px);
+  }
+}
+
+h5,
+.b-heading-5 {
+  font-size: px-to-rem(16px);
+}
+
+h6,
+.b-heading-6 {
+  font-size: px-to-rem(15px);
+}
+
+strong,
+b {
+  font-weight: $bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+a,
+.b-link {
+  display: inline-block;
+  transition: color, background, fill, opacity;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  font-weight: $medium;
+
+  &,
+  &:visited {
+    color: $link-color;
+    text-decoration: $link-decoration;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+.b-link--block {
+  display: block;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: $mono;
+  font-weight: $normal;
+  color: $col1;
+}
+
+abbr,
+abbr[title],
+acronym {
+  cursor: help;
+  color: $col-text;
+  border-bottom: 0;
+  text-decoration: underline dotted;
+}
+
+blockquote {
+  position: relative;
+  padding: px-to-rem(15px);
+  background: $col1;
+  color: $col-text;
+  border-left: px-to-rem(3px) solid $col-text;
+  font-weight: $bold;
+
+  & > *:first-child() {
+    margin-top: 0;
+  }
+
+  & > *:last-child() {
+    margin-bottom: 0;
+  }
+}
+
+q {
+  color: lighten($col-invert, 75%);
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+  font-weight: $normal;
+}
+
+address {
+  font-style: normal;
+
+  span {
+    display: block;
+    line-height: $base-line-height;
+  }
+}
+
+mark {
+  background: $col1;
+  padding: 0.1875rem;
+}
+
+del,
+s,
+strike {
+  text-decoration: line-through;
+}
+
+ins,
+u {
+  text-decoration: underline;
+}
+
+small {
+  font-size: 80%;
+}
+
+hr {
+  margin: $content-margin-bottom 0;
+  border: 0;
+  border-top: px-to-rem(1px) solid $col-invert;
+}
