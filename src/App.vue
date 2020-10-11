@@ -53,9 +53,6 @@ export default {
         name: "twitter:image",
         content: "/assets/favicon/liammmills.jpg"
       }
-    ],
-    link: [
-      { rel: "author", href: "/humans.txt" }
     ]
   },
   mixins: [DatesMixin],
