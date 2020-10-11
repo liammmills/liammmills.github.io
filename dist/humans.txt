@@ -1,9 +1,0 @@
-/* TEAM */                        
-Site creator: Liam Mills      
-Location: Kent, England, UK
-                
-/* SITE */          
-Last update: 2020/09/24
-Standards: HTML5, CSS3
-Components: Vue.js, GSAP, SASS, ecce-lima, ecce-lima-vue
-IDE: Visual Studio Code                    
