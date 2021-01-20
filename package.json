@@ -13,7 +13,7 @@
     "ecce-lima": "^5.0.5",
     "ecce-lima-vue": "^0.1.1",
     "execa": "^4.0.3",
-    "gsap": "^3.4.2",
+    "gsap": "^3.6.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-meta": "^2.4.0"
