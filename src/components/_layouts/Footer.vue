@@ -6,7 +6,7 @@
         &copy; Copyright {{ currentYear }}, Liam Mills |&nbsp;
         <link-base
           link-type-prop="normal"
-          href-prop="http://www.linkd.in/liammmills"
+          href-prop="https://www.linkedin.com/in/liam-mills-98519051/"
           target-prop="_blank"
           title-prop="Link to my Linkedin profile"
           rel-prop="noopener noreferrer"

@@ -12,7 +12,7 @@
         <link-base
           link-type-prop="normal"
           link-text-prop="Multimedia, Technology and Design"
-          href-prop="https://www.kent.ac.uk/courses/undergraduate/226/multimedia-technology-and-design"
+          href-prop="https://www.kent.ac.uk"
           target-prop="_blank"
           rel-prop="noopener noreferrer"
         />
@@ -75,7 +75,7 @@ export default {
         },
         {
           title: "Design Software",
-          summary: " (Sketch, Adobe CC)"
+          summary: " (Sketch, Adobe CC, Figma)"
         },
         {
           title: "CSS Naming and Structuring Methodologies",
@@ -83,7 +83,7 @@ export default {
         },
         {
           title: "JavaScript and JavaScript Frameworks",
-          summary: " (ES6+ Vanilla JS, jQuery, Vue.js, Nuxt.js, Node.js)"
+          summary: " (ES6+ Vanilla JS, jQuery, TypeScript, Vue.js, Nuxt.js, React, Next.js, React Native, Node.js)"
         },
         {
           title: "Frontend Frameworks",
@@ -112,7 +112,7 @@ export default {
         },
         {
           title: "Frontend Build Tools",
-          summary: " (Webpack, Gulp, Grunt, laravel-mix)"
+          summary: " (Webpack, Gulp, Grunt, laravel-mix, Vite)"
         }
       ]
     };
