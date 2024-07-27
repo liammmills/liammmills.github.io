@@ -44,7 +44,7 @@ export default {
     truncatedWorkedWithList() {
       return [...this.workedWithList]
         .sort(() => Math.random() - Math.random())
-        .slice(0, 6)
+        .slice(0, 3)
         .map((x) => () => import(`../_svg/worked/${x}.vue`));
     },
   },
@@ -67,10 +67,16 @@ export default {
     width: 50%;
     height: px-to-rem(70px);
     padding: 0 px-to-rem(10px);
-    margin: px-to-rem(10px) 0;
+    margin: px-to-rem(10px) 0 !important;
 
     @include min-screen(480px) {
       width: 33.333%;
+    }
+
+    &:nth-child(3) {
+      @include max-screen(479px) {
+        display: none;
+      }
     }
 
     svg {
