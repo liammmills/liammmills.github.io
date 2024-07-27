@@ -2,7 +2,7 @@ module.exports = {
   css: {
     loaderOptions: {
       scss: {
-        prependData: `
+        additionalData: `
           @import "~@/assets/scss/abstracts/_vars.scss";
           @import "~ecce-lima/assets/scss/abstracts/_functions.scss";
           @import "~@/assets/scss/abstracts/_placeholders.scss";

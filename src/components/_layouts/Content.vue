@@ -16,19 +16,28 @@
           target-prop="_blank"
           rel-prop="noopener noreferrer"
         />
-        &nbsp; at the
+        at the
         <link-base
           link-type-prop="normal"
-          link-text-prop="University Of Kent"
+          link-text-prop="University Of Kent,"
           href-prop="https://www.kent.ac.uk/locations/canterbury/"
           target-prop="_blank"
           rel-prop="noopener noreferrer"
-        />, I have obtained {{ careerLength }} years experience in the web
+        />
+        I have obtained {{ careerLength }} years experience in the web
         development industry in which I now focus on frontend technologies.
       </p>
       <p>
         In my career, I strive everyday to improve my knowledge in all avenues I
-        can with web development, trying to implement new technologies while
+        can with web development, including studying for
+        <link-base
+          link-type-prop="normal"
+          link-text-prop="my MSc in Computer Science."
+          href-prop="https://online.herts.ac.uk/masters/msc-computer-science"
+          target-prop="_blank"
+          rel-prop="noopener noreferrer"
+        />
+        In my work, I am always trying to implement new technologies while
         providing the best experience from all websites and applications I
         create.
       </p>
@@ -47,6 +56,13 @@
           <small v-if="item.summary.length > 0">{{ item.summary }}</small>
         </li>
       </ul>
+      <divider-component />
+      <h3>Worked with</h3>
+      <p>
+        Below is a truncated list of companies I have worked with in my
+        {{ careerLength }} year career.
+      </p>
+      <worked-with-list-component />
     </div>
   </article>
 </template>
@@ -54,69 +70,80 @@
 <script>
 import LinkBase from "ecce-lima-vue/components/_base/Link";
 import DividerComponent from "../_components/Divider";
+import WorkedWithListComponent from "../_components/WorkedWithList";
 import DatesMixin from "../../mixins/Dates.js";
 
 export default {
   mixins: [DatesMixin],
   components: {
     LinkBase,
-    DividerComponent
+    DividerComponent,
+    WorkedWithListComponent,
   },
   data() {
     return {
       experienceList: [
         {
           title: "HTML5, CSS3",
-          summary: ""
+          summary: "",
         },
         {
           title: "Responsive Design",
-          summary: ""
+          summary: "",
         },
         {
           title: "Design Software",
-          summary: " (Sketch, Adobe CC, Figma)"
+          summary: "(Sketch, Adobe CC, Figma)",
         },
         {
           title: "CSS Naming and Structuring Methodologies",
-          summary: " (BEM, ITCSS)"
+          summary: "(BEM, ITCSS)",
         },
         {
           title: "JavaScript and JavaScript Frameworks",
-          summary: " (ES6+ Vanilla JS, jQuery, TypeScript, Vue.js, Nuxt.js, React, Next.js, React Native, Node.js)"
+          summary:
+            "(ES6+ Vanilla JS, jQuery, TypeScript, Vue.js, Nuxt.js, React, Next.js, React Native, Node.js)",
         },
         {
           title: "Frontend Frameworks",
           summary:
-            " (Bootstrap, Semantic UI, Skeleton, Tailwind CSS, Custom Frameworks)"
+            "(Bootstrap, Semantic UI, Skeleton, Tailwind CSS, Custom Frameworks)",
         },
         {
           title: "CMS Intergrations",
-          summary: " (Craft CMS, Wordpress, Custom CMS)"
+          summary: "(Craft CMS, Wordpress, DatoCMS, Custom CMS)",
+        },
+        {
+          title: "Ecommerce Packages",
+          summary: "(Shopify, BigCommerce, WooCommerce, Custom Solutions)",
         },
         {
           title: "Server Side Languages",
-          summary: " (PHP, ColdFusion)"
+          summary: "(PHP, ColdFusion)",
         },
         {
           title: "Templating",
-          summary: " (Twig, Blade, Pug)"
+          summary: "(Twig, Blade, Pug, Handlebars)",
         },
         {
           title: "Version Control",
-          summary: " (Github, Bitbucket)"
+          summary: "(Github, Bitbucket)",
         },
         {
           title: "Web APIs",
-          summary: " (REST, GraphQL)"
+          summary: "(REST, GraphQL)",
         },
         {
           title: "Frontend Build Tools",
-          summary: " (Webpack, Gulp, Grunt, laravel-mix, Vite)"
-        }
-      ]
+          summary: "(Webpack, Gulp, Grunt, laravel-mix, Vite)",
+        },
+        {
+          title: "Testing Frameworks",
+          summary: "(Jest, Cypress)",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
