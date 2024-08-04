@@ -29,15 +29,7 @@
       </p>
       <p>
         In my career, I strive everyday to improve my knowledge in all avenues I
-        can with web development, including studying for
-        <link-base
-          link-type-prop="normal"
-          link-text-prop="my MSc in Computer Science."
-          href-prop="https://online.herts.ac.uk/masters/msc-computer-science"
-          target-prop="_blank"
-          rel-prop="noopener noreferrer"
-        />
-        In my work, I am always trying to implement new technologies while
+        can with web development, trying to implement new technologies while
         providing the best experience from all websites and applications I
         create.
       </p>
