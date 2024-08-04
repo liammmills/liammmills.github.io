@@ -29,7 +29,7 @@ export default {
     IconBase,
     ScrollLinkBase,
     VideoComponent,
-    LogoIcon
+    LogoIcon,
   },
   methods: {
     msToS(num) {
@@ -82,17 +82,18 @@ export default {
       } else {
         return false;
       }
-    }
+    },
   },
   mounted() {
     this.runAnimation();
-  }
+  },
 };
 </script>
 
 <style lang="scss">
 .l-header {
-  height: calc(100vh + 13px);
+  height: 100vh;
+  height: 100svh;
   min-height: px-to-rem(331px);
   padding: 0;
 
