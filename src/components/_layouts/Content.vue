@@ -76,7 +76,7 @@ export default {
     return {
       experienceList: [
         {
-          title: "HTML5, CSS3",
+          title: "HTML5, CSS3, SASS/SCSS, LESS, JS",
           summary: "",
         },
         {
@@ -85,7 +85,7 @@ export default {
         },
         {
           title: "Design Software",
-          summary: "(Sketch, Adobe CC, Figma)",
+          summary: "(Sketch, Adobe CC, Gimp, Figma)",
         },
         {
           title: "CSS Naming and Structuring Methodologies",
@@ -119,7 +119,7 @@ export default {
         },
         {
           title: "Version Control",
-          summary: "(Github, Bitbucket)",
+          summary: "(Github, Bitbucket, Gitlab)",
         },
         {
           title: "Web APIs",
