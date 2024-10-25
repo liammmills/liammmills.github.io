@@ -14,7 +14,7 @@
     "execa": "^4.0.3",
     "gsap": "^3.6.0",
     "register-service-worker": "^1.7.1",
-    "vue": "^2.6.11",
+    "vue": "^3.0.0",
     "vue-meta": "^2.4.0"
   },
   "devDependencies": {
